@@ -248,7 +248,7 @@ p {
 .offer__row {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 7rem;
 }
 .offer__row .column {
   max-width: 500px;
@@ -378,7 +378,7 @@ footer hr {
 }
 .social i {
   color: var(--DarkGrayishViolet);
-  font-size: 22px;
+  font-size: 25px;
 }
 .footer__top {
   display: flex;
@@ -392,6 +392,9 @@ footer hr {
   align-items: flex-start;
   flex-direction: column;
   gap: 1rem;
+}
+.footer__column div a {
+  color: var(--DarkViolet);
 }
 .footer__bottom {
   width: 80%;
