@@ -70,13 +70,13 @@ p {
 }
 .hamburger {
   display: none;
-  border: 2px solid #101010;
+  border: 1px solid #101010;
   padding: 0.5rem;
 }
 .bar {
   display: block;
   width: 25px;
-  height: 3px;
+  height: 2px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -248,7 +248,7 @@ p {
 .offer__row {
   display: flex;
   flex-wrap: wrap;
-  gap: 7rem;
+  gap: 2rem;
 }
 .offer__row .column {
   max-width: 500px;
@@ -280,6 +280,7 @@ p {
   .offer__row {
     justify-content: center;
     text-align: center;
+    gap: 7rem;
   }
   .offer__row .column {
     width: 100%;
