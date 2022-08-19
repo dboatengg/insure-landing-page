@@ -233,7 +233,7 @@ hr {
 /************offer*****************/
 .offer {
   max-width: 1200px;
-  margin: 300px auto;
+  margin: 200px auto 100px auto;
   width: 90%;
 }
 .offer__content {
@@ -253,6 +253,10 @@ hr {
   max-width: 500px;
   min-width: 250px;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
 }
 .offer__row .column .title {
   font-size: 3rem;
@@ -276,12 +280,63 @@ hr {
   .offer__row .column {
     width: 100%;
     min-width: 100%;
+    align-items: center;
   }
   .offer__title {
     font-size: 3.5rem;
+    text-align: center;
   }
   .offer__row .column .title {
     font-size: 2.2rem;
     color: var(--VeryDarkViolet);
+  }
+}
+
+/**********call-to-action***********/
+.call-to-action {
+  background-color: var(--DarkViolet);
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  max-height: 200px;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: flex-end;
+  padding: 60px 30px;
+  background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  align-content: center;
+  gap: 1rem;
+  margin-bottom: 100px;
+  border-radius: 5px;
+}
+.call-to-action h2 {
+  font-size: 5.2rem;
+  line-height: 1;
+}
+@media only screen and (max-width: 960px) {
+  .call-to-action h2 {
+    text-align: center;
+    font-size: 3.4rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .call-to-action {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /* min-height: 250px; */
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url("/images/bg-pattern-how-we-work-mobile.svg");
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .call-to-action h2 {
+    font-size: 2.4rem;
   }
 }
