@@ -149,7 +149,8 @@ p {
   width: 90%;
   left: 0;
 }
-hr {
+.offer hr,
+.hero hr {
   width: 30%;
   max-width: 200px;
 }
@@ -314,7 +315,7 @@ hr {
   background-position: top right;
   align-content: center;
   gap: 1rem;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   border-radius: 5px;
 }
 .call-to-action h2 {
@@ -350,5 +351,80 @@ hr {
   .btn--call-to-action {
     font-size: 1.1rem;
     padding: 1rem 2rem;
+  }
+}
+/*********footer*********/
+footer {
+  background-color: var(--VeryLightGray);
+  padding: 3rem 0;
+  margin: 100px auto 0 auto;
+  background-image: url("/images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 30%;
+}
+.footer__content {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+footer hr {
+  width: 100%;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.social i {
+  color: var(--DarkGrayishViolet);
+  font-size: 22px;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+.footer__column div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__bottom {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 4rem 0;
+  font-size: 13px;
+  /* font-size: 15px; */
+}
+.footer__column h3 {
+  color: var(--DarkGrayishViolet);
+  margin-bottom: 2rem;
+  font-family: "Karla";
+  font-weight: 600;
+}
+@media only screen and (max-width: 800px) {
+  footer {
+    background-image: url("/images/bg-pattern-footer-mobile.svg");
+    background-position: top center;
+    background-size: 100%;
+  }
+  .footer__bottom,
+  .footer__top {
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__bottom {
+    width: 100%;
+  }
+  .footer__column div {
+    align-items: center;
   }
 }
