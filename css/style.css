@@ -233,7 +233,7 @@ hr {
 /************offer*****************/
 .offer {
   max-width: 1200px;
-  margin: 200px auto 100px auto;
+  margin: 220px auto 100px auto;
   width: 90%;
 }
 .offer__content {
@@ -270,6 +270,9 @@ hr {
   color: var(--VeryDarkViolet);
 }
 @media only screen and (max-width: 768px) {
+  .offer {
+    margin: 100px auto 100px auto;
+  }
   .offer__content {
     align-items: center;
   }
@@ -337,6 +340,15 @@ hr {
 }
 @media only screen and (max-width: 400px) {
   .call-to-action h2 {
-    font-size: 2.4rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .call-to-action h2 {
+    font-size: 2.2rem;
+  }
+  .btn--call-to-action {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
   }
 }
